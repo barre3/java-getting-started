@@ -9,6 +9,8 @@ agent:
 blocks:
   - name: Java example
     task:
+      prologue:
+        - sem-version java 11
       jobs:
         - name: Run java
           commands:
